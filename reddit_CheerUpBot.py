@@ -2,7 +2,7 @@ import praw
 import re
 
 bot = praw.Reddit(user_agent="CheerUpBot", client_id="secret", client_secret="secret", username="secret", password="secret")
-subreddit = bot.subreddit("all") #Make sure this is possible
+subreddit = bot.subreddit("all")
 
 comments = subreddit.stream.comments()
 
